@@ -1,44 +1,51 @@
-# AWS Solutions Architect Associate (SAA-C03) — Complete Topic Guides
+# AWS SAA-C03 Learning Hub
 
-**38 exam-focused study guides covering the entire SAA-C03 syllabus** — written the way a good teacher explains, not the way documentation reads.
+A practical, community-friendly path to the **AWS Certified Solutions Architect – Associate (SAA-C03)** exam.
 
-> Battle-tested on a successful exam attempt — shared in the hope they help you pass too. 🎉
+This repository combines 37 concise topic guides with a repeatable learning system: choose a study path, learn the service trade-offs, solve architecture scenarios, track weak areas, and verify details against AWS documentation.
 
-## What makes these different
+> [!IMPORTANT]
+> This is an independent community resource, not an AWS exam dump and not affiliated with or endorsed by AWS. The exam can change. Use the [official AWS exam page](https://aws.amazon.com/certification/certified-solutions-architect-associate/) and documentation as the final authority.
 
-Every guide follows the same battle-tested format:
+## Choose your path
 
-1. **The idea** — each service explained *from zero* with a real-world analogy (Multi-AZ = a spare tire, Read Replicas = extra checkout lanes, Route 53 = a phonebook, NAT = a receptionist mailing your letters…)
-2. **Core concepts** — the exam-tested facts and numbers, with explicit **"THE trap"** callouts for the mistakes the exam is designed to harvest
-3. **Question patterns** — realistic exam-style scenarios with the answer *and the signal keywords that crack them*
-4. **Pocket card** — a keyword → answer table for rapid review
+| If you have… | Start here | Suggested rhythm |
+|---|---|---|
+| 4–6 weeks | [Four-week learning plan](learning-paths/4-week-plan.md) | Learn → recall → scenario → review |
+| 1–2 weeks | [Topic index](topic-guides/00-README.md) | Prioritize core infrastructure, databases, integration, and networking |
+| A few days | [Decision guide](decision-guides/README.md) | Practice the service choices you are most likely to confuse |
+| An exam booked | [Progress tracker](CHECKLIST.md) | Turn every missed question into a named weak area |
 
-The guides teach the *decision patterns* the exam actually tests ("Multi-AZ vs Read Replica", "Gateway vs Interface Endpoint", "SQS vs SNS vs Kinesis vs EventBridge") — not service trivia in isolation.
+Then test your reasoning with the [architecture challenges](practice/architecture-challenges.md). The answers explain why the tempting alternatives fail—not just which option wins.
 
-## Start here
+## How to learn with this repository
 
-📖 **[Topic Guides Index](topic-guides/00-README.md)** — all 38 guides with a suggested reading order grouped by exam weight.
+1. **Understand:** read one topic guide without trying to memorize every limit.
+2. **Recall:** close it and explain the service in your own words.
+3. **Decide:** use the decision guide to compare similar services.
+4. **Apply:** solve an architecture challenge before opening its answer.
+5. **Repair:** record misses in the progress tracker and revisit them after 48 hours.
+6. **Verify:** check volatile facts, quotas, and pricing in current AWS documentation.
 
-The heavy hitters, if you're short on time:
-- [VPC](topic-guides/06-VPC.md) — the single biggest exam topic
-- [S3](topic-guides/02-S3.md) — storage classes, encryption, the works
-- [RDS & Aurora](topic-guides/09-RDS-Aurora.md) — home of the most-tested distinction on the exam
-- [SQS, SNS & Kinesis](topic-guides/17-SQS-SNS-Kinesis.md) — the messaging block
-- [Exam Traps & Key Patterns](topic-guides/36-Exam-Traps-KeyPatterns.md) — ⭐ read this last, and again on exam morning
+## What is included
 
-## Exam-technique rules
+- [37 topic guides](topic-guides/00-README.md) with analogies, core concepts, traps, scenarios, and pocket cards
+- [A four-week plan](learning-paths/4-week-plan.md) organized around active recall and spaced review
+- [Decision matrices](decision-guides/README.md) for commonly confused AWS services
+- [Architecture challenges](practice/architecture-challenges.md) with expandable explanations
+- [A printable progress tracker](CHECKLIST.md) for topics, practice, and weak-area review
+- Automated checks for broken internal links and missing attribution
 
-1. **Read the last sentence of the question first** — "MOST cost-effective" vs "LEAST operational overhead" vs "highly available" decides between the two plausible finalists.
-2. **Count the requirements** — "X *as well as* Y" is a checklist; the right answer ticks every box. Half-solutions are planted for people who stop at the first match.
-3. **Scan options for poison qualifiers** — *serverless, automatically, at no cost, immediately, directly, cannot/always* — a true fact welded to one false word is the exam's favorite distractor.
-4. **When two options are twins**, the entire question lives in the differing clause.
-5. **Requirements are eliminators, not decoration** — a stated number (retrieval time, IOPS, RPO/RTO) exists to kill specific options. Eliminate first, then pick the cheapest/most-managed survivor.
-6. **When every familiar option is wrong-scope, the unfamiliar one is the answer** — real-but-unknown features sound specific and boring; fabricated ones sound grand and vague.
+## A healthy way to use exam material
 
-## Disclaimer
+These guides teach architecture judgment rather than recalled exam questions. Do not add confidential exam content, copied practice-test questions, or claims that a question is “from the real exam.” Good contributions explain a durable AWS concept, cite an authoritative source, and make the trade-off easier to understand.
 
-Community study notes — not affiliated with or endorsed by AWS. Accurate to the SAA-C03 exam as of mid-2026; always cross-check details that matter against current AWS documentation.
+## Accuracy and contributions
 
-## License
+AWS services evolve. If you find an outdated limit, ambiguous explanation, or missing trade-off, please open a fact-check issue or submit a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for the evidence and writing standards.
 
-[CC BY 4.0](LICENSE) — you're free to use, share, and adapt these guides, **but you must give credit**: mention **RonitSachdev** and link back to this repository in anything you build from them. If these helped you pass, a ⭐ on the repo is appreciated too.
+## Attribution and license
+
+The 37 files under `topic-guides/` were originally created by [RonitSachdev](https://github.com/RonitSachdev) in [RonitSachdev/aws-saa-c03-guides](https://github.com/RonitSachdev/aws-saa-c03-guides). This repository adapts that CC BY 4.0 work and adds new learning paths, decision aids, practice scenarios, community standards, and quality automation. Changes are not endorsed by the original author.
+
+The repository is licensed under [CC BY 4.0](LICENSE). When reusing it, preserve attribution to the original author and indicate your changes.
